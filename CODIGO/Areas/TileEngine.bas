@@ -1039,8 +1039,9 @@ Public Function InitTileEngine(ByVal setDisplayFormhWnd As Long, ByVal setTilePi
     ScrollPixelsPerFrameY = pixelsToScrollPerFrameY
 
 On Error GoTo 0
-
-    Call LoadGrhData
+    
+     Call LoadGrhIni
+    'Call LoadGrhInd
     Call CargarCuerpos
     Call CargarCabezas
     Call CargarCascos
